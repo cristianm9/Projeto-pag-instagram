@@ -22,14 +22,13 @@ body {
 .instagram-wrapper{
     display: flex;
     align-items: center;
-    justify-content:start;
+    justify-content:center;
     width:50%;
     height: 100vh;
-    
+   
 }
 .instagram-phone{
-  
-    margin-right: 20px;
+   margin-right: 20px;
    padding-bottom: 15%;
    justify-content: center;
    align-items: center;
@@ -39,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-   width: 50%;
+    width: 50%;
 }
 
 .instagram-photo img{
@@ -51,7 +50,6 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-  
     width: 50%;
     min-height: 34rem;
 }
@@ -65,22 +63,18 @@ body {
     padding: 1.3rem 0;
     border: 1px solid lightgray;
     margin-bottom: 0.8rem;
+    max-width: 350px;
 }
-    .profile-photo-edit{
-        border-radius: 50%;
-      
-        overflow: hidden;
-        
-
-      
-    }
+   
 .profile-photo{
     display: flex;
     align-content: center;
     flex-direction: column;
     overflow: hidden;
-    text-align: center;
-   
+    text-align: center;  
+}
+.profile-photo-edit{
+    border-radius: 50%;
 }
 .group:nth-child(1){
     min-height: 10rem;
@@ -90,7 +84,6 @@ body {
     }
 
 .profile-photo img{
- 
     height: 8rem;
     margin-bottom: 1rem;
 }
@@ -120,25 +113,35 @@ body {
     align-content: center;
     width: 100%;
     padding: 1.3rem 0;
+    
+}
+.get-app{
+    font-weight: bold;
 }
 .download{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
+   
 }
 
 .app-download{
-    height: 3rem;
+    height:36px;
     width: 10rem;
     background-size: cover;
-}
+    margin: 2px;
+        }
 .app-download:nth-child(1){
     background-image: url("./img/apple-button.png");
+    border-radius: 5px;
+   
 }
 .app-download:nth-child(2){
     background-image: url("./img/google-button.png");
+    border-radius: 5px;
+    
 }
 
 /* Media */
@@ -159,10 +162,22 @@ body {
     .instagram-phone{
         display: none;
     }
+  
     .instagram-continue{
         width: 100%;
     }
     .group{
         border: 1px solid transparent;
     }
+  .download{
+    padding: 0;  
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    vertical-align: baseline;
+  }
+  .app-download{
+      
+      margin-top: 5px;
+  }
 }
